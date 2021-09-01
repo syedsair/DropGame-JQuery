@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Drop</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<style>
+	.emptyBox{
+		height: 50px;
+		width: 50px;
+		background-color: white;
+		border-radius: 50%;
+		border: 3px solid white;
+		display: inline-block;
+		margin: 0px;
+	}
+	.redBox{
+		height: 50px;
+		width: 50px;
+		background-color: red;
+		border-radius: 50%;
+		border: 3px solid black;
+		display: inline-block;
+		margin: 0px;
+	}
+	.blueBox{
+		height: 50px;
+		width: 50px;
+		background-color: blue;
+		border-radius: 50%;
+		border: 3px solid black;
+		display: inline-block;
+		margin: 0px;
+	}
+	.greenBox{
+		height: 50px;
+		width: 50px;
+		background-color: green;
+		border-radius: 50%;
+		border: 3px solid black;
+		display: inline-block;
+		margin: 0px;
+	}
+	.yellowBox{
+		height: 50px;
+		width: 50px;
+		background-color: yellow;
+		border-radius: 50%;
+		border: 3px solid black;
+		display: inline-block;
+		margin: 0px;
+	}
+	.safeBox{
+		height: 50px;
+		width: 50px;
+		background-color: gray;
+		border-radius: 50%;
+		border: 3px solid black;
+		display: inline-block;
+		margin: 0px;
+	}
+	.blackBox{
+		height: 50px;
+		width: 50px;
+		background-color: black;
+		border-radius: 50%;
+		border: 3px solid black;
+		display: inline-block;
+		margin: 0px;
+	}
+	.alignRight{
+		float:right;
+	}
+	.alignLeft{
+		float:left;
+	}
+</style>
+
+</head>
+<body>
+<div class="container">
+	<center><h1>Welcome To The Drop!</h1></center>
+	<center><h2 id="chipsMessage">Chips Dropped : 0</h2></center>
+	<center><h2 id="playerMessage">Player 1's Turn</h2></center>
+	<div id="textbox">
+		<h2 class="alignLeft" id = "score1">Player 1: 0</h2>
+		<h2 class="alignRight" id = "score2">Player 2: 0</h2>
+	</div>
+	<br><br><br><hr>
+	
+	<center>
+		<div class="blackBox" id = "0"></div>
+		<div class="blackBox" id = "2"></div>
+		<div class="blackBox" id = "3"></div>
+		<div class="blackBox" id = "4"></div>
+		<div class="blackBox" id = "5"></div>
+		<div class="blackBox" id = "6"></div>
+		<div class="blackBox" id = "7"></div>
+	</center>
+	<center>
+		<div class="blackBox" id="10" ></div>
+		<div class="redBox" id="11" ></div>
+		<div class="redBox" id="12" ></div>
+		<div class="redBox" id="13" ></div>
+		<div class="redBox" id="14" ></div>
+		<div class="redBox" id="15" ></div>
+		<div class="redBox" id="16" ></div>
+		<div class="blackBox" id = "17"></div>
+	</center>
+	<center>
+		<div class="blackBox" id = "20"></div>
+		<div class="redBox" id="21" ></div>
+		<div class="yellowBox" id="22" ></div>
+		<div class="redBox" id="23" ></div>
+		<div class="redBox" id="24" ></div>
+		<div class="redBox" id="25" ></div>
+		<div class="redBox" id="26" ></div>
+		<div class="redBox" id="27" ></div>
+		<div class="blackBox" id = "28"></div>
+	</center>
+	<center>
+		<div class="blackBox" id = "30"></div>
+		<div class="redBox" id="31" ></div>
+		<div class="redBox" id="32" ></div>
+		<div class="redBox" id="33" ></div>
+		<div class="redBox" id="34" ></div>
+		<div class="redBox" id="35" ></div>
+		<div class="redBox" id="36" ></div>
+		<div class="redBox" id="37" ></div>
+		<div class="redBox" id="38" ></div>
+		<div class="blackBox" id="39"></div>
+	</center>
+	<center>
+		<div class="blackBox" id="40"></div>
+		<div class="redBox" id="41" ></div>
+		<div class="redBox" id="42" ></div>
+		<div class="redBox" id="43" ></div>
+		<div class="redBox" id="44" ></div>
+		<div class="yellowBox" id="45"></div>
+		<div class="redBox" id="46" ></div>
+		<div class="redBox" id="47" ></div>
+		<div class="redBox" id="48" ></div>
+		<div class="redBox" id="49" ></div>
+		<div class="blackBox" id = "50"></div>
+	</center>
+	<center>
+		<div class="blackBox" id = "50"></div>
+		<div class="redBox" id="51" ></div>
+		<div class="redBox" id="52" ></div>
+		<div class="redBox" id="53" ></div>
+		<div class="redBox" id="54" ></div>
+		<div class="redBox" id="55" ></div>
+		<div class="redBox" id="56" ></div>
+		<div class="yellowBox" id="57" ></div>
+		<div class="redBox" id="58" ></div>
+		<div class="blackBox" id = "59"></div>
+	</center>
+	<center>
+		<div class="blackBox" id = "60"></div>
+		<div class="redBox" id="61" ></div>
+		<div class="yellowBox" id="62" ></div>
+		<div class="redBox" id="63" ></div>
+		<div class="redBox" id="64" ></div>
+		<div class="redBox" id="65" ></div>
+		<div class="redBox" id="66" ></div>
+		<div class="redBox" id="67" ></div>
+		<div class="blackBox" id = "68"></div>
+	</center>
+	<center>
+		<div class="blackBox" id="70"></div>
+		<div class="redBox" id="71" ></div>
+		<div class="redBox" id="72" ></div>
+		<div class="redBox" id="73" ></div>
+		<div class="redBox" id="74" ></div>
+		<div class="redBox" id="75" ></div>
+		<div class="redBox" id="76" ></div>
+		<div class="blackBox" id="77"></div>
+	</center>
+	<center>
+		<div class="blackBox" id="80"></div>
+		<div class="blackBox" id="81"></div>
+		<div class="blackBox" id="82"></div>
+		<div class="blackBox" id="83"></div>
+		<div class="blackBox" id="84"></div>
+		<div class="blackBox" id="85"></div>
+		<div class="blackBox" id="86"></div>
+	</center>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="dropScript.js"></script>
+</body>
+</html>
